@@ -85,3 +85,59 @@ checkwinner(averageDoplhins2, averageKoalas2);
 checkwinner(20, 70);
 
 // ARRAYS
+
+const friends = ["micheal", "steven", "peter"];
+
+console.log(friends);
+
+// const years1 = new Array(1991, 1994, 2008, 2020);
+console.log(friends[2]);
+
+friends[2] = "jay";
+console.log(friends);
+
+console.log(friends[2]);
+
+const jonas = ["jonas", "schmedtmann", 2037 - 1991, "teacher", friends];
+
+console.log(jonas);
+
+//exercise
+
+const calcAge = function (birthYeah) {
+  return 2037 - birthYeah;
+};
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+calcAge(years);
+
+// array methods
+
+// add elements at the end of array
+
+const newLength = friends.push("sandra");
+console.log(friends);
+
+// add elements at begining of array
+friends.unshift("john");
+console.log(friends);
+
+// remove last element from array
+friends.pop();
+console.log(friends);
+
+friends.pop();
+console.log(friends);
+
+// remove first element from array
+friends.shift();
+console.log(friends);
+
+// how to know location of an element
+console.log(friends.indexOf("steven"));
+console.log(friends.indexOf("bob"));
+
+// how to check wether an element exists in the array
+console.log(friends.includes("steven"));
+console.log(friends.includes("bob"));
