@@ -159,6 +159,7 @@ console.log(bills, tips, totals);
 const jonas = {
   firstName: "jonas",
   lastName: "schmedtmann",
+  middleName: "kamagu",
   age: 2037 - 1991,
   job: "teacher",
   friends: ["michael", "peter", "steven"],
@@ -176,3 +177,44 @@ console.log(
 );
 
 // objects methods
+console.log(jonas["age"]);
+console.log(jonas["lastName"]);
+console.log(jonas["friends"]);
+
+const iconTag = "Name";
+
+console.log(
+  `${jonas["first" + iconTag]} is my first name ${
+    jonas["last" + iconTag]
+  } is my second name and ${
+    jonas["middle" + iconTag]
+  } is my middle name and i am aged ${jonas["age"]}`
+);
+
+console.log(jonas["first" + iconTag]);
+console.log(jonas["middle" + iconTag]);
+
+// const intrestedIn = prompt(
+// //   "what do you want to know about jonas? Choose between firstName, lastName, middleName, age, job and friends"
+// // );
+
+// // console.log(jonas[intrestedIn]);
+
+// if (jonas[intrestedIn]) {
+//   console.log(jonas[intrestedIn]);
+// } else {
+//   console.log(
+//     "wrong request! choose between firstName, lastName, middleName, age, job and friends"
+//   );
+// }
+
+jonas.location = "uganda";
+jonas["twitter"] = "common";
+
+console.log(jonas);
+
+console.log(
+  `${jonas.firstName} has ${jonas.friends.length}, anh his best friend is called ${jonas.friends[0]}`
+);
+
+// 45min
